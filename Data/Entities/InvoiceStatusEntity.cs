@@ -1,8 +1,11 @@
-﻿namespace Data.Entities;
+﻿using System.Collections.Generic;
 
-public class InvoiceStatusEntity
+namespace Data.Entities
 {
-    public int Id { get; set; }
-    public string Status { get; set; } // Ex: Betald, Obetald
-    public ICollection<InvoiceEntity> Invoices { get; set; }
+    public class InvoiceStatusEntity
+    {
+        public int Id { get; set; }
+        public string Status { get; set; } // Ex: Betald, Obetald
+        public ICollection<InvoiceEntity> Invoices { get; set; }
+    }
 }

@@ -1,4 +1,6 @@
-﻿namespace Data.Entities
+﻿using System.Collections.Generic;
+
+namespace Data.Entities
 {
     public class EmployeeEntity
     {
@@ -10,5 +12,7 @@
 
         public int RoleEntityId { get; set; }
         public RoleEntity Role { get; set; }
+
+        public ICollection<TimesheetEntity> Timesheets { get; set; }
     }
 }

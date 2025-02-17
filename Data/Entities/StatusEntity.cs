@@ -1,9 +1,11 @@
-﻿
-namespace Data.Entities;
+﻿using System.Collections.Generic;
 
-public class StatusEntity
+namespace Data.Entities
 {
-    public int Id { get; set; }
-    public string Name { get; set; } // Ex: Ej påbörjad, Pågående, Avslutad
-    public ICollection<ProjectEntity> Projects { get; set; }
+    public class StatusEntity
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } // Ex: Ej påbörjad, Pågående, Avslutad
+        public ICollection<ProjectEntity> Projects { get; set; }
+    }
 }
