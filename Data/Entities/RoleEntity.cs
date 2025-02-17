@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
+﻿
 
-namespace Data.Entities
+namespace Data.Entities;
+
+public class RoleEntity
 {
-    public class RoleEntity
-    {
-        public int Id { get; set; }
-        public string RoleName { get; set; }
-        public ICollection<EmployeeEntity> Employees { get; set; }
-    }
+    public int Id { get; set; }
+    public string? RoleName { get; set; }
+    public ICollection<EmployeeEntity> Employees { get; set; } = null!;
 }
